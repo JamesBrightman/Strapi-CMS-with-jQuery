@@ -1,0 +1,21 @@
+{
+  "connection": "default",
+  "collectionName": "testcs",
+  "info": {
+    "name": "testc",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "TestString": {
+      "type": "string"
+    },
+    "Num": {
+      "type": "integer"
+    }
+  }
+}

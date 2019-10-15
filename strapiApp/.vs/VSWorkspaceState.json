@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\config",
+    "\\config\\environments",
+    "\\config\\environments\\production"
+  ],
+  "SelectedNode": "\\config\\environments\\production\\server.json",
+  "PreviewInSolutionExplorer": false
+}

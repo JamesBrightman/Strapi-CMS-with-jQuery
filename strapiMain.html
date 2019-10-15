@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('#ajaxBtn').click(function(){
+
+                $.get('http://localhost:1337/testcs', function (data, textStatus, jqXHR) {
+                    console.log(data);
+                    console.log(textStatus);
+                    console.log(jqXHR);
+
+                    $('p').append(textStatus);
+                    document.getElementById("jsonScreen").innerHTML = JSON.stringify(data, undefined, 2);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<h1> Strapi get() using jQuery
+</h1>
+<p>API call status: </p>
+<input type="button" id="ajaxBtn" value="Send GET request" />
+<pre id="jsonScreen"></pre>
+</body>
+</html>
